@@ -1,8 +1,8 @@
 const express = require('express')
-const userRouter = express.router()
+const userRouter = express.Router()
 const User = require('../models/User')
 
-router.get('/:user_id', async(req, res) => {
+userRouter.get('/:user_id', async(req, res) => {
     try {
         const user = await User.findById(req.params.user_id)
         res.json(user)
@@ -11,7 +11,7 @@ router.get('/:user_id', async(req, res) => {
     }
 })
 
-router.get('/post-user', async(req, res) => {
+userRouter.post('/post-user', async(req, res) => {
     const user = new User({
         name: req.body.name,
         lastName: req.body.lastName,
