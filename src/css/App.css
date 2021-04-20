@@ -1,3 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul li {
+  list-style: none;
+}
+
 body {
-  background: red;
+  line-height: 1.8;
+}
+
+.navbar {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+}
+.navbar .navbar-items .navbar-link {
+  display: inline-block;
+}
+
+.sidebar {
+  background-color: cornflowerblue;
+  width: 25%;
+}
+
+.main-section {
+  width: 100%;
+  background-color: cornsilk;
+  height: 95vh;
+}
+
+.content-wrapper {
+  display: flex;
 }

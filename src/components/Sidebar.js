@@ -2,7 +2,7 @@ import React from 'react';
 
 const SideNavbar = () => {
     return (
-        <div className='side-nav'>
+        <div className='sidebar'>
             <p>Side nav</p>
         </div>
     );

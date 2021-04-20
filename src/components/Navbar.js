@@ -1,9 +1,22 @@
 import React from 'react';
+import SearchField from './SearchField';
 
 const Navbar = () => {
     return (
         <div className='navbar'>
-            <h1 style={{backgroundColor:'lightblue'}}>This is the navbar</h1>
+            <div className="brand-name">
+                <p>
+                    <i className="fa fa-bars"></i>
+                    <span>Logo</span>
+                </p>
+            </div>
+            <SearchField />
+
+            <ul className="navbar-items">
+                <li className="navbar-link">Sign in</li>
+                <li className="navbar-link">Sign up </li>
+            </ul>
+            
         </div>
     );
 }
