@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from "react-router-dom"
+
 import SearchField from './SearchField';
 
 const Navbar = () => {
     return (
         <div className='navbar'>
             <div className="brand-name">
-                <p>
+                <Link to="/">
                     <i className="fa fa-bars"></i>
-                    <span>Logo</span>
-                </p>
+                    <span><i className="fa fa-youtube-square"></i> Youtube</span>
+                </Link>
             </div>
             <SearchField />
 
             <ul className="navbar-items">
-                <li className="navbar-link">Sign in</li>
-                <li className="navbar-link">Sign up </li>
+                <li className="navbar-link"><Link to="/login">Sign in</Link></li>
+                <li className="navbar-link"><Link to="/register">Sign up</Link></li>
             </ul>
             
         </div>
