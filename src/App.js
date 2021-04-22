@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./Sass/App.scss";
 
 import LandingPage from "./components/LandingPage";
-import Register from "./components/Register";
+import SignupForm from "./components/SignupForm";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 
@@ -15,7 +15,7 @@ function App() {
 
       <Switch>
         <Route path="/" exact component={LandingPage} />
-        <Route path="/signup" component={Register} />
+        <Route path="/signup" component={SignupForm} />
         <Route path="/login" component={Login} />
       </Switch>
     </Router>
